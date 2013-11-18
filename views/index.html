@@ -1,0 +1,21 @@
+<div class="">
+  <h1><a href="#/">Editor</a></h1>
+  <a href=""
+    ng-click="connect()"
+    ng-hide="connected">
+      Connect to Dropbox
+  </a>
+  <span ng-show="connected">
+    {{ user.display_name }}
+    <!-- Disconnect -->
+  </span>
+</div>
+
+
+<ul>
+  <li ng-repeat=" file in files | filter:'.md' ">
+    <a ng-href="#{{ file.path }}/edit">{{ file.path }}</a>
+  </li>
+</ul>
+
+<!-- <pre>{{ files | json }}</pre> -->

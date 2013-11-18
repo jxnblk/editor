@@ -1,0 +1,30 @@
+// Styles for Editor
+
+@import "basscss";
+
+// Theme
+
+code, pre, samp, .mono {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+  outline: none;
+  white-space: pre-wrap;
+}
+$gray: #eee;
+$mid-gray: #666;
+.gray { color: $gray; }
+.bg-gray { background-color: $gray; }
+.mid-gray { color: $mid-gray; }
+
+
+// Code Mirror stuff
+.CodeMirror {
+  font-family: 'Source Code Pro', menlo, monospace;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.cm-header { 
+  color: #333;
+  font-weight: bold;
+}
+

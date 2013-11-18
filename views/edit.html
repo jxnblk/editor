@@ -1,0 +1,20 @@
+<div class="toolbar mb1">
+  <h1><a href="#/">Editor</a></h1>
+  <form ng-submit="saveFile()">
+    <input type="text" ng-model="filename" placeholder="filename" />.md
+  </form>
+
+  <a href="" ng-show="filename" ng-click="saveFile()">Save</a>
+</div>
+
+<div style="max-width:960px;margin:0 auto;">
+  <textarea ui-codemirror="editorOptions" ng-model="content"></textarea>
+</div>
+
+<!-- <p>contenteditable plaintext-only</p>
+<pre
+  class="p1 mt4 bg-gray"
+  ng-model="content" 
+  contenteditable="{{isEditable}}"
+  class="">
+</pre> -->
